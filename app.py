@@ -25,10 +25,12 @@ def mad_libs(adjective, noun):
 
 
 @app.route('/multiply/<number1>/<number2>')
-def multiple(num1, num2):
-    int(num1) * int(num2):
+def multiply():
+    number1 = int(('number1'))
+    number2 = int(('number2'))
+    result = number1 * number2
 
-    return f'{int((num1)}*{num2} is'
+    return f"You multiplied {number1} and {number2} to get {result}."
 
 
 if __name__ == '__main__':
